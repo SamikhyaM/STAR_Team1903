@@ -11,6 +11,7 @@ import { ProgressService } from '../services/progress.service';
       <nav>
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a routerLink="/lessons" routerLinkActive="active">Learn</a>
+        <a routerLink="/roadmap" routerLinkActive="active">Roadmap</a>
         @if (p.user(); as name) {
           <span>Hi, {{ name }}</span>
           <button class="btn" (click)="p.logout()">Log out</button>
