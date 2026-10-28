@@ -1,6 +1,6 @@
-# STARWebsite
+# STAR
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.41.
 
 ## Development server
 
@@ -38,7 +38,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
 ng test
@@ -57,3 +57,17 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## Pathway Forward: team notes
+
+- `src/styles.css`: design tokens (colors, fonts, radius). Restyle the whole site by editing the top block.
+- `src/app/data/lessons.ts`: ALL lessons and quizzes. Replace the placeholder YouTube IDs.
+- `src/app/pages/home.ts`: the home page, built from the designer's mockup.
+- `src/app/services/progress.service.ts`: the only file that touches storage (swap for a Python API later).
+
+Run locally: `npm install` then `npm start` (http://localhost:4200)
+
+Deploy to GitHub Pages (replace REPO with your repo name):
+`npx ng add angular-cli-ghpages` once, then `npx ng deploy --base-href=/REPO/`
+Then in the repo: Settings > Pages > branch `gh-pages`.
