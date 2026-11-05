@@ -12,13 +12,9 @@ export const LESSONS: Lesson[] = [
   { id: 1, title: 'One Step Equations', subject: '∑ Math', summary: 'Know how to solve equations that require one operation to isolate an unknown variable (usually \(x\)). Practice using addition, subtraction, multiplication, and division to find the value of the variable.', videoId: 'Gh29G9z5vcY', quizId: 'algebra-1' }, 
   { id: 2, title: 'Basic Math', subject: '∑ Math', summary: 'Know how to perform addition, subtraction, multiplication, and division using a calculator. Make sure to practice with fractions, decimals, percentages, roots, and exponents too. Very important: you need to know how to perform math operations based on word problems.', videoId: 'UFb3_Jq0W5Y', quizId: 'basicMath-1' }, 
   { id: 3, title: 'Main Idea', subject: 'English ✎', summary: 'Learn how to identify the main idea of a passage and distinguish it from supporting details. Practice recognizing the central message, understanding what the author wants to communicate, and identifying details that support the main idea.', videoId: 'LeEY2gSLijM', quizId: 'reading-1' }, 
-  { id: 4, title: 'Foundational Documents', subject: 'History 𓍝', summary: 'Learn about the foundations of the U.S. government, including important historical documents, the three branches of government, elections, and how political systems work. Understand the roles and responsibilities of government institutions and how citizens participate in the democratic process.', videoId: 'CV9S3cwWMBg', quizId: 'history-1' }, 
-  { id: 5, title: 'Branches of Governmemt', subject: 'History 𓍝', summary: 'Learn about the three branches of the U.S. government: the legislative, executive, and judicial branches. Understand their individual roles and responsibilities, how they work together to govern the country, and how the system of checks and balances prevents any one branch from becoming too powerful.', videoId: '3ev3Y8VAD18', quizId: 'history-2' }, 
+  { id: 4, title: 'Foundational Documents', subject: 'History 𓍝', summary: 'Learn about the foundations of the U.S. government, including important historical documents, the three branches of government, elections, and how political systems work. Understand the roles and responsibilities of government institutions and how citizens participate in the democratic process.', videoId: 'CV9S3cwWMBg', quizId: 'history-2' }, 
+  { id: 5, title: 'Branches of Government', subject: 'History 𓍝', summary: 'Learn about the three branches of the U.S. government: the legislative, executive, and judicial branches. Understand their individual roles and responsibilities, how they work together to govern the country, and how the system of checks and balances prevents any one branch from becoming too powerful.', videoId: '3ev3Y8VAD18', quizId: 'history-1' }, 
   { id: 6, title: 'Cell Functions', subject: 'Science ⚛︎', summary: 'Understand the basic functions of cells and how their structures help them survive. Know the roles of major cell organelles, including the nucleus, cell membrane, cytoplasm, mitochondria, and ribosomes.', videoId: 'HoJ2eoFtwSw', quizId: 'biology-1' }, 
-  { id: 7, title: 'Geography & the World', subject: 'History 𓍝', summary: 'Geographic themes, environment, and resource management.', videoId: 'NybHckSEQBI', quizId: 'algebra-1' },
-  { id: 8, title: 'Life Science', subject: 'Science ⚛︎', summary: 'Cell structures and functions, photosynthesis and cellular respiration, human body systems (digestive, respiratory, immune), genetics (DNA, chromosomes, Punnett squares), and ecosystems/food chains.', videoId: 'NybHckSEQBI', quizId: 'reading-1' }, 
-  { id: 9, title: 'Physical Science', subject: 'Science ⚛︎', summary: 'Atoms and molecules, chemical reactions and equations, force and motion, kinetic and potential energy, waves, and electricity/magnetism.', videoId: 'NybHckSEQBI', quizId: 'reading-1' }, 
-  { id: 10, title: 'Economics', subject: 'History 𓍝', summary: 'Fundamental economic principles, market types, and financial systems.', videoId: 'NybHckSEQBI', quizId: 'algebra-1' },
 ];
 
 export const QUIZZES: Quiz[] = [
@@ -30,6 +26,30 @@ export const QUIZZES: Quiz[] = [
       { text: 'Solve: 3x + 2 = x', options: ['x = 1', 'Impossible', 'x = -1', 'x = 67'], answerIndex: 2, explanation: 'Subtract 2 from both sides, then subtract x from both sides, finally divide by 2.'}
     ],
   },
+  {
+  id: 'basicMath-1',
+  title: 'Basic Math',
+  questions: [
+    {
+      text: 'What is 3/4 + 0.5?',
+      options: ['1.00', '1.25', '1.50', '1.75'],
+      answerIndex: 1,
+      explanation: 'Convert 0.5 to 1/2. Then 3/4 + 1/2 = 3/4 + 2/4 = 5/4 = 1.25.'
+    },
+    {
+      text: 'What is 25% of 240?',
+      options: ['40', '50', '60', '80'],
+      answerIndex: 2,
+      explanation: 'Convert 25% to 0.25 and multiply: 0.25 × 240 = 60.'
+    },
+    {
+      text: 'A store sells 4 notebooks for $3 each. If you pay with a $20 bill, how much change will you receive?',
+      options: ['$6', '$8', '$10', '$12'],
+      answerIndex: 1,
+      explanation: 'First, multiply 4 × $3 = $12. Then subtract $12 from $20 to get $8 in change.'
+    }
+  ],
+},
   {
     id: 'reading-1', title: 'Main Idea and supporting details',
     passage: 'The Importance of Community Gardens\n\nCommunity gardens provide neighborhoods with many benefits. They allow residents to grow fresh fruits and vegetables, giving families access to healthier food options. These gardens also bring people together by encouraging neighbors to work as a team and share gardening knowledge. Additionally, community gardens can improve the appearance of neighborhoods by transforming unused spaces into green areas. Overall, community gardens help create healthier and more connected communities.',
@@ -83,6 +103,39 @@ export const QUIZZES: Quiz[] = [
       ],
       answerIndex: 3,
       explanation: 'State governments generally oversee education, including establishing public school systems and setting education policies. The other options are powers of the federal government.'
+    }
+  ],
+},{
+  id: 'history-1',
+  title: 'Branches of Government',
+  questions: [
+    {
+      text: 'Which branch of the U.S. government is responsible for making laws?',
+      options: ['Executive', 'Judicial', 'Legislative', 'Federal'],
+      answerIndex: 2,
+      explanation: 'The legislative branch, made up of Congress (the House of Representatives and Senate), is responsible for creating and passing laws.'
+    },
+    {
+      text: 'What is the primary responsibility of the executive branch?',
+      options: [
+        'Interpreting laws',
+        'Enforcing laws',
+        'Creating laws',
+        'Declaring laws unconstitutional'
+      ],
+      answerIndex: 1,
+      explanation: 'The executive branch, led by the President, is responsible for enforcing and carrying out federal laws.'
+    },
+    {
+      text: 'What is the purpose of checks and balances in the U.S. government?',
+      options: [
+        'To allow the President to control Congress',
+        'To give courts the power to create laws',
+        'To prevent any one branch from becoming too powerful',
+        'To eliminate disagreements between branches'
+      ],
+      answerIndex: 2,
+      explanation: 'Checks and balances allow each branch to limit the powers of the others, helping prevent any single branch from gaining too much authority.'
     }
   ],
 },
