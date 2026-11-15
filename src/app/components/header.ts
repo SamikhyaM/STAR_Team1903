@@ -8,7 +8,7 @@ import { ProgressService } from '../services/progress.service';
 template: `
   <header>
     <a routerLink="/" class="brand">
-      <img src="/star.GIF" alt="" class="brandStar">
+      <img src="star.GIF" alt="" class="brandStar">
       STAR Education
     </a>
     <nav>
